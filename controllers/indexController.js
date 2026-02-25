@@ -1,11 +1,11 @@
 const messages = require("../db/messages");
-const formatTime = require("../ulits/formatTime");
+const formatTime = require("../utils/formatTime");
 module.exports = {
     get: (_, res) => {
-        res.render("../views/pages/index", { messages });
+        res.render("pages/index", { messages });
     },
     getNew: (_, res) => {
-        res.render("../views/pages/newMessage");
+        res.render("pages/newMessage");
     },
     postNew: (req, res) => {
         messages.push({
