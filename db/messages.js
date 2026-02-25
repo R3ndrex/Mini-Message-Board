@@ -1,4 +1,4 @@
-const formatTime = require("../ulits/formatTime");
+const formatTime = require("../utils/formatTime");
 const messages = [
     {
         text: "Hi there!",
