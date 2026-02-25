@@ -1,6 +1,25 @@
 {
-  "dependencies": {
-    "ejs": "^4.0.1",
-    "express": "^5.2.1"
-  }
+    "dependencies": {
+        "ejs": "^4.0.1",
+        "express": "^5.2.1"
+    },
+    "name": "mini-message-board",
+    "version": "1.0.0",
+    "description": "Mini Message Board",
+    "main": "app.js",
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon --env-file=.env ./app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/R3ndrex/Mini-Message-Board.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/R3ndrex/Mini-Message-Board/issues"
+    },
+    "homepage": "https://github.com/R3ndrex/Mini-Message-Board#readme"
 }

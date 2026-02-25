@@ -1,0 +1,20 @@
+<html lang="en">
+    <%-include("../partials/head",{title:"Main Page"})%>
+    <body>
+        <header><h1>Mini Message Board</h1></header>
+       <main>
+       <% if (locals.messages && locals?.messages?.length>0){%>
+        <ul>
+             <% for(let i=0;i<messages.length;i++){ %>
+            <%-include("../partials/message",{message:messages[i]})%>
+        <%}%>
+
+        </ul>
+        <%}%>
+        <div class="message-input">
+            <input type="text" placeholder="Enter the Message">
+            <a href="/new">Send Message</a>
+        </div>
+       </main>
+    </body>
+</html>
