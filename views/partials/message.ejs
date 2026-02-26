@@ -1,4 +1,7 @@
 <li class="message">
-    <%=message.user%> <span class="message-time"> <%=message.added%></span>
+    <%=message.user%>
+    <a href="/messages/<%=message.id%>"
+        ><img width="16px" src="/open.svg" alt="open button"
+    /></a>
     <span class="message-text"><%=message.text%></span>
 </li>

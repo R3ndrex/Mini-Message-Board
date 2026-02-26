@@ -1,5 +1,7 @@
-<form method=<%=locals?.method||"POST"%> action=<%=locals?.action||""%>>
-    <input type="text" name="name" placeholder="Enter Name" />
-    <input type="text" name="message" placeholder="Enter Message" />
-    <button><img class="send" src="/send.png" alt="Send Image"></button>
+<form  class="message-form" method=<%=locals?.method||"POST"%> action=<%=locals?.action||""%>>
+    <label for="name">Name</label>
+    <input required id="name" type="text" name="name" placeholder="Enter Name" /><span class="name-error"></span>
+    <label for="message">Text</label>
+    <input required id="message" type="text" name="message" placeholder="Enter Message" class="text-error"/><span></span>
+    <button><img width="24px" class="send" src="/send.png" alt="Send Image"></button>
 </form>
