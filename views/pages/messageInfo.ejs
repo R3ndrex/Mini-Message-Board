@@ -4,7 +4,7 @@
         <header class="return-header"><h1>Message Info</h1> <a href="/"><img width="24px" src="/back.svg" alt="back button"></a> </header>
 
        <main>
-            <% if(locals.message.text && locals.message.user&& locals.message.added){%>
+            <% if(locals.message?.text && locals.message?.user&& locals.message?.added){%>
             <ul>
                 <li>Name: <%=locals.message.user%></li>
                 <li>Text: <%=locals.message.text%></li>
